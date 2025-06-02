@@ -35,17 +35,10 @@ text5 = "The wall is a great album";
 result5 = text5.indexOf(" ");
 console.log(result5);
 
-/* f) Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco. Encontrar la posición del último espacio en blanco y guardarla en una variable (utilizar lastIndexOf).*/
+/* f) Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y algún espacio entre medio). Utilizar los métodos de los ejercicios anteriores para generar un nuevo string que tenga la primera letra de cada palabra en mayúscula y las demás letras en minúscula (utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +).*/
 
 var text6, result6;
-text6 = "The wall is a great album";
-result6 = text6.lastIndexOf(" ");
+text6 = "empanadas salteñas";
+var firstSpace = text6.indexOf(" ");
+result6 = text6.substring(0, 1).toUpperCase() + text6.substring(1, firstSpace).toLowerCase() + " " + text6.substring(firstSpace + 1, firstSpace + 2).toUpperCase() + text6.substring(firstSpace + 2).toLowerCase();
 console.log(result6);
-
-/* g) Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y algún espacio entre medio). Utilizar los métodos de los ejercicios anteriores para generar un nuevo string que tenga la primera letra de cada palabra en mayúscula y las demás letras en minúscula (utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +).*/
-
-var text7, result7;
-text7 = "empanadas salteñas";
-var firstSpace = text7.indexOf(" ");
-result7 = text7.substring(0, 1).toUpperCase() + text7.substring(1, firstSpace).toLowerCase() + " " + text7.substring(firstSpace + 1, firstSpace + 2).toUpperCase() + text7.substring(firstSpace + 2).toLowerCase();
-console.log(result7);
