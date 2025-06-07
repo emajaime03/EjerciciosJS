@@ -1,0 +1,20 @@
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(130, 178, 255);
+    padding: 10px;
+}
+
+.encabezado-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.encabezado-principal h1 {
+    font-size: 50px;
+}
